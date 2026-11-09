@@ -147,7 +147,9 @@ def main():
         flat.append({"part": len(ep["news"]) + 1, "kind": "closing", "index": None, "say": l["say"], "show": l["show"]})
 
     for i, l in enumerate(flat):
-        p = f"{work}/lines/{i:02d}.mp3"
+        import hashlib
+        h = hashlib.md5(l["say"].encode("utf-8")).hexdigest()[:8]
+        p = f"{work}/lines/{i:02d}-{h}.mp3"
         if not (os.path.exists(p) and os.path.getsize(p) > 1000):
             r = subprocess.run(
                 ["/opt/hatch/bin/tts", "speak", "--voice", VOICE, "--language", "ja",
