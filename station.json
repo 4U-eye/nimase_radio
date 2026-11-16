@@ -3,14 +3,14 @@
     "dir": "audio",
     "keep_days": 30
   },
-  "caster": "声：Muse の音声合成",
+  "caster": "声：COEIROINK:リリンちゃん",
   "character": {
     "note": "AIで生成したキャラクターです",
     "pack": "character/character.json",
     "thumbnail": "character/base.png"
   },
   "credits": [
-    "声：Muse の音声合成"
+    "声：COEIROINK:リリンちゃん"
   ],
   "description": "毎日のニュースを、毎朝短くまとめてお届けします。政治・経済・国際・地域の話題を5本、スマホで聞いて、その場で出典も確認できます。",
   "episodes": "episodes.json",
