@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""二間瀬ラジオ: 台本ベースJSON → 音声・タイミング付き台本・その日のHTML を作る。
+"""nimase ラジオ: 台本ベースJSON → 音声・タイミング付き台本・その日のHTML を作る。
 
 使い方:
   python3 make_episode.py <base-episode.json>
@@ -89,7 +89,7 @@ def build_html(ep, mp3_path):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>二間瀬ラジオ {date_jp}</title>
+<title>nimase ラジオ {date_jp}</title>
 <style>
   body {{ margin:0; background:#07080c; color:#f2f3f5; font-family: system-ui, "Hiragino Kaku Gothic ProN", sans-serif; }}
   main {{ max-width: 640px; margin: 0 auto; padding: 20px 16px 48px; }}
@@ -112,7 +112,7 @@ def build_html(ep, mp3_path):
 <body>
 <main>
   <header>
-    <div class="name">二間瀬ラジオ</div>
+    <div class="name">nimase ラジオ</div>
     <h1>{esc(ep["title"])}</h1>
     <div class="date">{date_jp} ・ {length}</div>
     <audio controls preload="metadata" src="data:audio/mpeg;base64,{b64}"></audio>
@@ -122,7 +122,7 @@ def build_html(ep, mp3_path):
     <h2>台本</h2>
     {script_html}
   </section>
-  <footer>二間瀬ラジオ ／ 声：Muse の音声合成 ／ 出典は各カードのリンク先（NHKニュース）</footer>
+  <footer>nimase ラジオ ／ 声：Muse の音声合成 ／ 出典は各カードのリンク先（NHKニュース）</footer>
 </main>
 </body>
 </html>
