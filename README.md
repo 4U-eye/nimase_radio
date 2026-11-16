@@ -4,7 +4,7 @@
 
 - プレーヤーは `index.html`。台本は `episodes/` の JSON、音声は `audio/` の MP3 です
 - スマホ対応：PWA（`manifest.webmanifest`／`sw.js`）入り。公開先を Chrome で開けば「アプリをインストール」からホーム画面に追加できます
-- 声：Muse の音声合成
+- 声：COEIROINK:リリンちゃん
 - キャラクターとプレーヤーの仕組みは [myradio](https://github.com/monoradio102/myradio)（ものラジオ）のテンプレートを使っています
 
 ## 公開するとき
