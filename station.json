@@ -12,7 +12,7 @@
   "credits": [
     "声：COEIROINK:リリンちゃん"
   ],
-  "description": "毎日のニュースを、毎朝短くまとめてお届けします。政治・経済・国際・地域の話題を5本、スマホで聞いて、その場で出典も確認できます。",
+  "description": "毎日のニュースを、毎朝15本・約15分でお届けします。政治・経済・国際・地域の話題を幅広く、スマホで聞いて、その場で出典も確認できます。",
   "episodes": "episodes.json",
   "format": "myradio/station-1",
   "language": "ja",
