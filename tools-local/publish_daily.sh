@@ -29,7 +29,8 @@ fi
 git -C "$ST" push origin main >/dev/null 2>&1 || FAIL="$FAIL local-push"
 
 step "publish.sh"
-SHARE_FONT=$SHARE_FONT bash "$ST/tools/publish.sh" >/tmp/publish-daily.log 2>&1 \
+# publish.sh は局リポジトリの中で実行する必要がある（git rev-parse を使用するため）
+(cd "$ST" && SHARE_FONT=$SHARE_FONT bash "$ST/tools/publish.sh") >/tmp/publish-daily.log 2>&1 \
   || { FAIL="$FAIL publish.sh"; tail -5 /tmp/publish-daily.log; }
 
 step "github main"
