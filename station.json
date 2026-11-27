@@ -1,0 +1,33 @@
+{
+  "audio": {
+    "dir": "audio",
+    "keep_days": 30
+  },
+  "caster": "声：COEIROINK:リリンちゃん",
+  "character": {
+    "note": "AIで生成したキャラクターです",
+    "pack": "character/character.json",
+    "thumbnail": "character/base.png"
+  },
+  "credits": [
+    "声：COEIROINK:リリンちゃん"
+  ],
+  "description": "毎日のニュースを、毎朝15本・約15分でお届けします。政治・経済・国際・地域の話題を幅広く、スマホで聞いて、その場で出典も確認できます。",
+  "episodes": "episodes.json",
+  "format": "myradio/station-1",
+  "language": "ja",
+  "languages": [
+    "ja"
+  ],
+  "logo": "logo.svg",
+  "name": "nimase ラジオ",
+  "repo": "https://github.com/4U-eye/nimase_radio",
+  "schedule": {
+    "every": "day",
+    "time": "06:44",
+    "timezone": "Asia/Tokyo"
+  },
+  "tagline": "毎日のニュースを短く",
+  "url": "https://4u-eye.github.io/nimase_radio/",
+  "weather": true
+}
